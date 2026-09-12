@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AI Deep Inquiry Lab — simulasi AI dan Pembelajaran Mendalam untuk IPS SMP">
+  <title>AI Deep Inquiry Lab | IPS FUTURE CLASS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <div class="brand">
+        <div class="brand-mark">IPS</div>
+        <div>
+          <div class="brand-name">IPS FUTURE CLASS</div>
+          <div class="brand-sub">Pembelajaran Mendalam • Teknologi Digital & AI</div>
+        </div>
+      </div>
+      <div class="student-pill"><span class="status-dot"></span> Demo Siswa <b>VII</b></div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-copy">
+          <span class="eyebrow">SIMULASI PEMBELAJARAN</span>
+          <h1><span>AI</span> DEEP INQUIRY LAB</h1>
+          <p>Belajar lebih dalam dengan mengamati masalah nyata, menguji bukti, berdialog dengan AI, lalu mengambil keputusan.</p>
+          <div class="hero-tags">
+            <span>🔎 Inquiry</span><span>🤖 AI sebagai partner berpikir</span><span>🧠 Refleksi</span>
+          </div>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <div class="city">🏙️</div>
+          <div class="cloud">☁️</div>
+          <div class="rain">••••••••</div>
+          <div class="water">〰 〰 〰 〰</div>
+          <div class="house">🏠</div>
+          <div class="tree">🌳</div>
+          <div class="hero-label">Dari pertanyaan kecil<br><b>lahir pemahaman besar</b></div>
+        </div>
+      </section>
+
+      <section class="progress-wrap">
+        <div id="progressLine" class="progress-line"></div>
+        <div id="stepper" class="stepper"></div>
+      </section>
+
+      <section class="workspace">
+        <aside class="sidebar">
+          <button class="side-btn active" data-jump="0"><span>👁️</span><div><b>1. Amati</b><small>Kenali fenomena</small></div></button>
+          <button class="side-btn" data-jump="1"><span>❓</span><div><b>2. Tanyakan</b><small>Bangun pertanyaan</small></div></button>
+          <button class="side-btn" data-jump="2"><span>📚</span><div><b>3. Cari Bukti</b><small>Pilih informasi</small></div></button>
+          <button class="side-btn" data-jump="3"><span>📊</span><div><b>4. Analisis</b><small>Uji dugaan</small></div></button>
+          <button class="side-btn" data-jump="4"><span>🤖</span><div><b>5. Dialog AI</b><small>Berpikir bersama</small></div></button>
+          <button class="side-btn" data-jump="5"><span>💡</span><div><b>6. Keputusan</b><small>Pilih solusi</small></div></button>
+          <button class="side-btn" data-jump="6"><span>🧠</span><div><b>7. Refleksi</b><small>Maknai pengalaman</small></div></button>
+          <div class="quote">“AI bukan untuk menggantikan pikiranmu, tetapi untuk membuatmu berpikir lebih jauh.”</div>
+        </aside>
+
+        <section class="main-card">
+          <div class="case-card">
+            <div class="case-visual">
+              <div class="flood-scene">
+                <span class="sun">☁️</span><span class="rain-lines">╱╲ ╱╲ ╱╲</span>
+                <span class="road">🚗  🚙</span><span class="water-lines">≈≈≈≈≈≈≈≈</span>
+                <span class="trash">🗑️</span><span class="tree2">🌳</span>
+              </div>
+            </div>
+            <div class="case-text">
+              <span class="case-badge">KASUS NYATA</span>
+              <h2>Mengapa banjir semakin sering terjadi di lingkungan kita?</h2>
+              <p>Amati fenomena di sekitar. Jangan buru-buru mencari jawaban. Mulailah dari apa yang benar-benar kamu lihat.</p>
+            </div>
+          </div>
+
+          <div id="stageContent"></div>
+        </section>
+
+        <aside class="ai-panel">
+          <div class="ai-head"><div class="robot">🤖</div><div><b>AI ASSISTANT</b><small><span class="status-dot"></span> Online • Mode Pembimbing</small></div></div>
+          <div id="aiMessage" class="ai-message">Halo! Saya AI Assistant IPS. Saya tidak akan langsung memberikan jawaban. Saya akan membantumu berpikir dengan pertanyaan, bukti, dan umpan balik.</div>
+          <div class="ai-tip">
+            <b>🎯 Prinsip AI Lab</b>
+            <p>Jawaban AI bukan bukti. Kamu tetap harus memeriksa, membandingkan, dan menjelaskan alasanmu.</p>
+          </div>
+          <div class="ai-mini">
+            <span>PROSES BERPIKIR</span>
+            <div class="mini-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+            <small id="miniStatus">Tahap 1 dari 7</small>
+          </div>
+        </aside>
+      </section>
+    </main>
+
+    <footer>
+      <div><b>IPS FUTURE CLASS</b><span>Membaca Dunia, Memahami Kehidupan</span></div>
+      <div class="footer-center">💡 Berpikir Kritis &nbsp; • &nbsp; 🌍 Solusi Nyata &nbsp; • &nbsp; 🤖 Teknologi untuk Belajar</div>
+      <div>Designed by Saepul Fadilah<br><b>Enhanced with AI</b></div>
+    </footer>
+  </div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
